@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  webapp:
+    build: ./django-form
+    volumes:
+        - ./django-form/:/code/src/webapp/
+    ports: 
+        - 80:80
+
+
